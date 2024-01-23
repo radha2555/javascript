@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var type = myFunction(n2 = 10);
+        console.log(type);
+        var type = myFunction(23, 855);
+        console.log(type);
+
+        function myFunction(n1 = 9, n2 = 7) {
+            nsq1 = n1 ** 2;
+            nsq2 = n2 ** 2;
+            middle = 2 * n1 * n2;
+            res = nsq1 + middle + nsq2;
+            document.write(res + "<br>");
+            return res;
+        }
+        //int myFunction (int Val){}
+    </script>
+</body>
+
+</html>

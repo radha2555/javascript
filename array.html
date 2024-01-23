@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [5, "thomson", true, 324, 9.3];
+        document.write(arr + "<br>");
+
+        document.write(arr[1] + "<br>");
+        document.write(arr.length + "<br>");
+
+        arr[2] = false;
+        document.write(arr + "<br>");
+
+        arr[5] = "Crane";
+        arr.push(123);
+        document.write(arr + "<br>");
+        arr.pop();
+        document.write(arr + "<br>");
+
+        arr.unshift(987);
+        document.write(arr + "<br>");
+        document.write(arr.shift() + "<br>");
+        document.write(arr + "<br>");
+
+        document.write(arr.slice(2, 5) + "<br>");
+        arr.splice(2, 3);
+        document.write(arr + "<br>");
+
+        console.log(arr);
+        console.log(arr.toString());
+
+        var arr1 = [1, 2, 3, 4];
+        var arr2 = [5, 6, 7, 8];
+        var arrConc = arr1.concat(arr2);
+        console.log(arrConc);
+
+        var index = arrConc.indexOf(3);
+        arr1 = arrConc.slice(0, index + 1);
+        arr2 = arrConc.slice(index + 1, arrConc.length);
+        arr1.push(3.5);
+        arrConc = arr1.concat(arr2);
+        console.log(arrConc);
+
+        arrConc = arrConc.slice(0, index + 1).push(3.5)
+            .concat(arrConc.slice(index + 1, arrConc.length));
+        console.log(arrConc);
+    </script>
+</body>
+
+</html>

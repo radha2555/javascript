@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstName: "Thomson",
+            lastName: "Crane",
+            age: 24,
+            emp: {
+                company: "JP Morgan",
+                designation: "IT Support"
+            },
+            email: ['thomsonc@jpmprgan.com', 'tcrane @jpmorgan.com']
+        };
+        document.write(person["firstName"] + " " + person["lastName"] + "<br>"); //key Name by bracket method
+        document.write(person.firstName + " " + person.lastName + "<br>"); //key Name by dot method
+
+        document.write(person["emp"]["company"] + "<br>");
+        document.write(person.emp.company + "<br>");
+
+        document.write(person["email"][0] + "<br>");
+        document.write(person.email[0] + "<br>");
+
+        document.write(person.age + "<br>");
+        delete person.age;
+        document.write(person.age);
+    </script>
+</body>
+
+</html>
